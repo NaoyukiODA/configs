@@ -1,7 +1,7 @@
 if &compatible
   set nocompatible
 endif
-set runtimepath+=~/.vim/dein/repos/github.com/Shougo/dein.vim
+set runtimepath+=~/.vim/repos/github.com/Shougo/dein.vim
 set number
 set tabstop=4
 set shiftwidth=4
@@ -14,7 +14,7 @@ set columns=120
 set lines=40
 set tags=./tags;
 
-call dein#begin(expand('~/.vim/dein'))
+call dein#begin(expand('~/.vim/'))
 
 call dein#add('Shougo/dein.vim')
 call dein#add('Shougo/vimproc.vim', {
@@ -27,7 +27,10 @@ call dein#add('Shougo/vimproc.vim', {
     \    },
     \ })
 call dein#add('rust-lang/rust.vim')
-
+call dein#add('toyamarinyon/vim-swift')
 call dein#add('Shougo/unite.vim')
 call dein#add('fatih/vim-go')
 call dein#end()
+
+filetype plugin indent on
+syntax enable
