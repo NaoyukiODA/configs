@@ -34,3 +34,4 @@ call dein#end()
 
 filetype plugin indent on
 syntax enable
+set hlsearch
